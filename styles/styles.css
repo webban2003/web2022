@@ -11,12 +11,13 @@ body {
   font-size: 16pt;
 }
 
-header{
+header {
   font-size: 22pt;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
   border-bottom: 3px solid white;
+  padding-top: 2px;
 }
 
 nav h2 {
