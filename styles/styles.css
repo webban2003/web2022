@@ -17,7 +17,8 @@ header {
   letter-spacing: 3px;
   text-align: center;
   border-bottom: 3px solid white;
-  padding-top: 2px;
+  width: 50rem;
+  padding: 5px;
 }
 
 nav h2 {
