@@ -23,7 +23,7 @@ header {
 #logo {
   padding-bottom: 25px;
   height: auto;
-  width: 12px;
+  width: auto;
 }
 
 img {
@@ -33,9 +33,14 @@ img {
 
 nav h2 {
   margin: 1rem 1rem 1rem 1rem;
+  text-align: left;
 }
 
 nav ul {
+  display: block;
+  float: left;
+  width: 150px;
+  position: relative;
   list-style: none;
 }
 
@@ -45,22 +50,11 @@ nav ul li {
   font-size: 18pt;
 }
 
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: pink;
-  font-size: 24pt;
-}
-
 section {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-   grid-template-rows: auto;
-   justify-items: center;
-   gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
 }
 
 .wrapper {
