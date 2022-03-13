@@ -66,10 +66,64 @@ section {
 .wrapper a:hover {
   color: pink;
   font-size: 24pt;
+  text-shadow: 1px 1px 2px black;
 }
 
 #main_section img {
   border-radius: 20px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    padding-bottom: 25px;
+    font-size: 12pt;
+}
+
+.breadcrumb li::before {
+    content: ">";
+}
+
+.breadcrumb li:first-child::before {
+    content: "";
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.tabletitle {
+  font-weight: bold;
+  font-size: 22pt;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.headerrow td {
+  border: 1px solid;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.rowhover {
+    text-align: center;
+}
+
+.rowhover:hover {
+    color: pink;
+    font-size: 18pt;
+    text-shadow: 1px 1px 2px black;
+}
+
+#roses {
+  width: 400px;
+  height: 300px;
 }
 
 footer {
