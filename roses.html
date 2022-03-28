@@ -23,43 +23,54 @@
 </nav>
 <p>
 <p>
-<table>
+<table class="ProdTables">
   <tbody>
     <tr>
       <td rowspan="10"><img src="images/roses.png" id="roses" title="Shop Fresh Roses" alt="Shop Fresh Roses"></td>
       <td class="tabletitle" colspan="3">Shop Fresh Roses</td>
     </tr>
     <tr>
-      <td colspan="3">from $10</td>
+      <td colspan="3">from $15</td>
     </tr>
     <tr>
       <td colspan="3">Love is better when is comes in dozens. And roses are the perfect way to show someone a little love. Hand-picked and carefully assembled into an ideal token of your appreciation. Choose your style and number of stems. We will take care of the rest!</td>
     </tr>
-    <tr><td></td></tr>
-    <tr class="headerrow">
-      <td></td>
-      <td>Wrapped</td>
-      <td>Vased</td>
+    <tr>
+      <td><form action="scripts/action.php" method="get">
+        <label for="RoseSize">Choose Your Number of Stems:</label>
+        <select id="RoseSize" name="RoseSize">
+          <option value="">--Please choose an option--</option>
+          <option value="Single">Single Rose</option>
+          <option value="HalfDozen">Half Dozen Roses</option>
+          <option value="OneDozen">Dozen Roses</option>
+          <option value="TwoDozen">Two Dozen Roses</option>
+        </select>
+      </form></td>
     </tr>
     <tr>
-      <td>Single Rose</td>
-      <td class="rowhover">$10</td>
-      <td class="rowhover">$15</td>
+      <td>
+        <form action="scripts/action.php" method="get">
+          <label for="RoseType">Choose Your Rose Style:</label>
+          <select id="RoseType" name="RoseType">
+            <option value="">--Please choose an option--</option>
+            <option value="Wrapped">Wrapped</option>
+            <option value="Vased">Vased</option>
+            <option value="Boxed">Boxed</option>
+          </select>
+        </form>
+      </td>
     </tr>
     <tr>
-      <td>Dozen Roses</td>
-      <td class="rowhover">$70</td>
-      <td class="rowhover">$80</td>
-    </tr>
-    <tr>
-      <td>Two Dozen Roses</td>
-      <td class="rowhover">$120</td>
-      <td class="rowhover">$140</td>
+      <td>
+        <form action="scripts/action.php" method="post" class="basic-form">
+           <input type="submit" value="Add To Cart">
+         </form>
+      </td>
     </tr>
   </tbody>
 </table>
 <p>
-  <footer>
+<footer>
     <address>
       <p>Best Flower Shop<br>
         123 Flower Way<br>
@@ -68,7 +79,6 @@
         Email: bestflowershop@gmail.com<br>
       </p>
     </address>
-  </footer>
-
+</footer>
 </body>
 </html>

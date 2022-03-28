@@ -26,51 +26,69 @@ header {
   width: auto;
 }
 
-nav h2 {
-  margin: 1rem 1rem 1rem 1rem;
-  text-align: left;
+.productsgrid {
+  max-width: auto;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-gap: 1px;
+  align-items: center;
+  justify-content: start;
+ }
+
+ .product {
+   background-color: #16405bff;
+   color: #ffffff;
+ }
+
+ .product a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 18pt;
+ }
+
+ .product a:hover {
+   color: pink;
+   font-size: 24pt;
+   text-shadow: 1px 1px 2px black;
+ }
+
+ .productheader {
+   grid-column-start: 2;
+   grid-column-end: 4;
+ }
+
+ .nav {
+   background-color: #16405bff;
+   color: #ffffff;
+   text-align: left;
+   align-self: center;
+   grid-row-start: 1;
+   grid-row-end: 4;
 }
 
 nav ul {
-  display: block;
-  float: left;
-  width: 150px;
-  position: relative;
   list-style: none;
 }
 
 nav ul li {
-  padding: 1em 1em 1em 1em;
+  padding-bottom: 20px;
   font-weight: bold;
   font-size: 18pt;
 }
 
-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: auto;
-  gap: 10px;
-}
-
-.wrapper {
-  margin: 1rem 1rem 1rem 1rem;
-  text-align: center;
-}
-
-.wrapper a {
+.nav a {
   color: #ffffff;
   text-decoration: none;
   font-size: 18pt;
 }
 
-.wrapper a:hover {
+.nav a:hover {
   color: pink;
   font-size: 24pt;
   text-shadow: 1px 1px 2px black;
-}
-
-#main_section img {
-  border-radius: 20px;
 }
 
 .breadcrumb ul {
@@ -79,7 +97,7 @@ section {
     font-size: 12pt;
 }
 
-.breadcrumb li::before {
+.breadcrumb li:before {
     content: ">";
 }
 
@@ -87,9 +105,10 @@ section {
     content: "";
 }
 
-table {
-    border-collapse: collapse;
-    width: 60%;
+.ProdTables {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
 }
 
 .tabletitle {
@@ -104,26 +123,38 @@ th, td {
   font-size: 14pt;
 }
 
-.headerrow td {
-  border: 1px solid;
-  text-align: center;
-  padding: 5px 5px 5px 5px;
-  text-shadow: 1px 1px 2px black;
+#RoseType {
+  font-family: Calibri;
+  font-size: 11pt;
 }
 
-.rowhover {
-    text-align: center;
-}
-
-.rowhover:hover {
-    color: pink;
-    font-size: 18pt;
-    text-shadow: 1px 1px 2px black;
+#RoseSize {
+  font-family: Calibri;
+  font-size: 11pt;
 }
 
 #roses {
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 400px;
+}
+
+#LanternType {
+  font-family: Calibri;
+  font-size: 11pt;
+}
+
+#LanternSize {
+  font-family: Calibri;
+  font-size: 11pt;
+}
+
+.basic-form input {
+  font-family: Calibri;
+  font-size: 11pt;
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+  border: 2px solid white;
 }
 
 footer {
