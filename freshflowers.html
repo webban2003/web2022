@@ -17,12 +17,10 @@
 </header>
 <nav aria-label="Breadcrumb" class="breadcrumb">
     <ul>
-        <li><a href="index.html" style="font-size: 10pt;color: white;">Home</a></li>
-        <li style="font-size: 10pt;color: white;">Shop Lanterns</li>
+        <li><a href="index.html">Home</a></li>
+        <li><span aria-current="page">Shop Fresh Flowers</span></li>
     </ul>
 </nav>
-<p>
-<p>
 <table class="ProdTables">
   <tbody>
     <tr>
@@ -33,31 +31,33 @@
       <td colspan="3">from $40</td>
     </tr>
     <tr>
-      <td colspan="3">Give the gift of light with these special luminaries, including Memorial Lanterns or Light boxes. They will definitely brighten someone's day. We custom design each luminary when ordered. Just choose your size and let us know your style preferences. <i>All lanterns include a flameless lighted candle.</i></td>
+      <td colspan="3">we know how to celebrate the special moments in life and we want to help you celebrate yours. Let’s take a fresh approach to flowers. <i>Select the size and occasion and we will take care of the rest!</i></td>
     </tr>
     <tr>
       <td>
         <form action="scripts/action.php" method="get">
-          <label for="LanternSize">Choose Your Lantern Size:</label>
-          <select id="LanternSize" name="LanternSize">
-            <option value="">--Please choose an option--</option>
-            <option value="Small">12" Small Lantern</option>
-            <option value="Medium">14" Medium Lantern</option>
-            <option value="Large">21" Large Lantern</option>
-            <option value="XLarge">28" XLarge Floor Lantern</option>
-          </select>
+          <label for="FreshSize">Choose Your Bouquet Size:</label>
+            <select id="FreshSize" name="FreshSize">
+              <option value="">--Please choose an option--</option>
+              <option value="Small">Standard</option>
+              <option value="Medium">Deluxe</option>
+              <option value="Large">Premium</option>
+            </select>
         </form>
       </td>
     </tr>
     <tr>
       <td>
         <form action="scripts/action.php" method="get">
-          <label for="LanternType">Choose Your Lantern Style:</label>
-          <select id="LanternType" name="LanternType">
+          <label for="FreshOccasion">Choose Your Occasion:</label>
+          <select id="FreshOccasion" name="FreshOccasion">
             <option value="">--Please choose an option--</option>
-            <option value="WithBow">With Bow</option>
-            <option value="WithSilk">With Silk Flowers</option>
-            <option value="WithFresh">With Fresh Flowers</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Engagement">Engagement</option>
+            <option value="GetWell">Get Well</option>
+            <option value="Sympathy">Sympathy</option>
+            <option value="thankyou">Thank You</option>
           </select>
         </form>
       </td>
