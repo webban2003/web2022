@@ -3,30 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="language" content="en">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>BEST FLOWER SHOP</title>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Florist",
-        "address": "123 Flower Way, Budstown, KY 33333",
-        "areaServed": "Fayette and Surrounding Counties",
-        "email": "bestflowershop@gmail.com",
-        "keywords": "flowers near me, florist, local florist, flowers, sympathy, anniversary, get well, bouquets, weddings, funerals",
-        "telephone": "555-BUDS4U",
-        "url": "https://webban2003.github.io/web2022/index.html"
-      }
-    </script>
+    <style>
+      html {
+         font-size: 100%; /* sets the default size of the font */
+         font-family: Calibri, sans-serif;
+         background-color: #16405bff;
+         color: #ffffff;
+       }
+
+       body {
+         padding: 0;
+         margin: 0;
+         font-size: 1.2rem;
+       }
+
+       header {
+         text-align: center;
+       }
+
+       .productsgrid {
+         max-width: auto;
+         margin: 10px auto;
+         padding: 10px;
+         text-align: center;
+         display: grid;
+         grid-template-columns: 20% 40% 40%;
+         grid-gap: 1px;
+         align-items: center;
+         justify-content: start;
+        }
+
+        .product {
+          background-color: #16405bff;
+          color: #ffffff;
+        }
+
+        .product a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 18pt;
+        }
+
+        .product a:hover {
+          color: pink;
+          font-size: 24pt;
+          text-shadow: 1px 1px 2px black;
+        }
+
+        .productheader {
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+
+        .nav {
+          background-color: #16405bff;
+          color: #ffffff;
+          text-align: left;
+          align-self: center;
+          grid-row-start: 1;
+          grid-row-end: 4;
+        }
+
+        .nav ul {
+          list-style: none;
+        }
+
+        .nav ul li {
+          padding-bottom: 20px;
+        }
+
+        .nav a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 18pt;
+        }
+
+        .nav a:hover {
+          color: pink;
+          font-size: 24pt;
+          text-shadow: 1px 1px 2px black;
+        }
+    </style>
   </head>
 
 <body>
 <header>
-  <h1>Best Flower Shop</h1>
-  <a href="index.html">
-    <img id="logo" src="images/logo.jpg" alt="The Best Flower Shop Header">
-  </a>
+    <h1>Best Flower Shop</h1>
+    <a href="index.html">
+      <img id="logo" src="images/logo.jpg" alt="The Best Flower Shop Header">
+    </a>
 </header>
+
 <div class="productsgrid">
   <div class="nav"><h2>Shop Occasions</h2>
       <nav>
@@ -74,18 +142,19 @@
         title="Shop Fresh Flowers" alt="Shop Fresh Flowers"><h3>Fresh Bouquets</h3></a>
   </div>
 </div>
+
 <div class="footer">
-    <footer>
-      <address>
-        <p>Best Flower Shop<br>
-          123 Flower Way<br>
-          Budstown, Ky 33333<br>
-          Phone: 555-BUDS4U<br>
-          Email: bestflowershop@gmail.com<br>
-        </p>
-      </address>
-    </footer>
-  </div>
-  <script src="scripts/main.js"></script>
+  <footer>
+    <address>
+      <p>Best Flower Shop<br>
+        123 Flower Way<br>
+        Budstown, Ky 33333<br>
+        Phone: 555-BUDS4U<br>
+        Email: bestflowershop@gmail.com<br>
+      </p>
+    </address>
+  </footer>
+</div>
+
 </body>
 </html>
